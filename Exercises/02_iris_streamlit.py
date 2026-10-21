@@ -14,31 +14,27 @@ def train_model():
 
 knn, target_names = train_model()
 
-# --- Custom CSS for Slider Fix ---
+# --- Custom CSS for better UI ---
 st.markdown("""
 <style>
-    /* Fix slider thumb alignment on mobile */
-    div[data-testid="stSlider"] div[role="slider"] {
-        margin-top: 0px !important;
-        margin-bottom: 0px !important;
-        align-self: center !important;
+    /* Reduce spacing between sliders */
+    div[data-testid="stSlider"] {
+        margin-bottom: -15px;
     }
-    
-    /* Make the track (line) and thumb (circle) align properly */
-    div[data-testid="stSlider"] > div {
-        display: flex !important;
-        align-items: center !important;
-    }
-    
-    /* Make slider labels cleaner */
+    /* Make slider text smaller and cleaner */
     div[data-testid="stSlider"] p {
-        font-size: 14px !important;
-        font-weight: 600 !important;
-        color: #555 !important;
-        margin-bottom: 5px !important;
+        font-size: 14px;
+        font-weight: 600;
+        color: #555;
+    }
+    /* Make the main title look nicer */
+    h1 {
+        color: #6C63FF;
+        text-align: center;
     }
 </style>
 """, unsafe_allow_html=True)
+# --------------------------------
 
 st.title("🌸 Iris Flower Classification")
 st.write("Adjust the sliders to predict the species of the Iris flower.")
