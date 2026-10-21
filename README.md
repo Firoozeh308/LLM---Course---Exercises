@@ -31,5 +31,10 @@ This repository is organized based on the course curriculum, which includes:
 ## 🚀 My Learning Goals
 Through this course, I aim to master Deep Learning concepts, build and train neural networks from scratch, and deploy smart solutions using TensorFlow and Keras.
 
+
+## 🎮 Live Demo
+You can try the interactive Streamlit app for the Iris model here:
+👉 **[Launch Live Demo](https://llm---course---exercises-6zvmrqquzxapppprcdmvheq5.streamlit.app/)**
+
 ---
 *Feel free to explore my learning journey!*
